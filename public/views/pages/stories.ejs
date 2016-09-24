@@ -1,0 +1,14 @@
+<div class="jumbotron text-center">
+	<h1>Stories</h1>
+
+	<table class="table table-bordered table-hover table-stripped">
+		<tbody>
+			<% stories.forEach(function(story,index) { %>
+				<tr>
+					<td><%= story.title %></td>
+				</tr>
+			<% }) %>
+		</tbody>
+
+	</table>
+</div>		
