@@ -3,9 +3,21 @@
 
 	<table class="table table-bordered table-hover table-stripped">
 		<tbody>
+			<thead>
+			<tr class="text=center">
+				<th>Title</th>
+				<th>Passage 1</th>
+				<th>Passage 2</th>
+				<th>Passage 3</th>
+				<th>Passage 4</th>
+			</tr>
+		</thead>
 			<% stories.forEach(function(story,index) { %>
 				<tr>
 					<td><%= story.title %></td>
+					<% story.passages.forEach(function(passage, index){ %>
+					<td><%= passage %></td>
+					<% }) %>
 				</tr>
 			<% }) %>
 		</tbody>
